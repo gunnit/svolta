@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test di Auto-valutazione Completo - La Svolta</title>
+    <meta name="description" content="Test professionale di 60 domande per riconoscere comportamenti violenti. Risultati immediati e piano d'azione personalizzato.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#4A90A4',
+              secondary: '#D97036',
+              accent: '#28A745',
+              danger: '#DC3545',
+              neutral: {
+                50: '#F8F9FA',
+                500: '#6C757D',
+                900: '#343A40'
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+              serif: ['Merriweather', 'serif']
+            }
+          }
+        }
+      }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans bg-neutral-50">
+    <!-- Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-40">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">LS</span>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-neutral-900">
+                            <a href="../../index.html" class="hover:text-primary transition-colors">La Svolta</a>
+                        </h1>
+                        <p class="text-sm text-neutral-500">Centro di Supporto</p>
+                    </div>
+                </div>
+                
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="../../index.html" class="text-neutral-700 hover:text-primary transition-colors">Home</a>
+                    <div class="relative group">
+                        <button class="text-neutral-700 hover:text-primary transition-colors flex items-center">
+                            Supporto
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-64 bg-white shadow-lg rounded-md py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <a href="../../pages/per-uomini.html" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-50">Per Gli Uomini</a>
+                            <a href="../../pages/per-familiari.html" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-50">Per Familiari e Amici</a>
+                            <a href="../../pages/per-professionisti.html" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-50">Per Professionisti</a>
+                        </div>
+                    </div>
+                    <a href="../../pages/risorse.html" class="text-primary font-semibold">Risorse</a>
+                    <a href="../../pages/chi-siamo.html" class="text-neutral-700 hover:text-primary transition-colors">Chi Siamo</a>
+                    <a href="../../pages/contatti.html" class="bg-primary text-white px-6 py-2 rounded-md hover:bg-opacity-90 transition-colors">Contatti</a>
+                </div>
+                
+                <button id="mobile-menu-btn" class="lg:hidden text-neutral-700 hover:text-primary">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="py-8">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <!-- Breadcrumb -->
+                <nav class="mb-8">
+                    <ol class="flex items-center space-x-2 text-sm text-neutral-500">
+                        <li><a href="../../index.html" class="hover:text-primary">Home</a></li>
+                        <li><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></li>
+                        <li><a href="../../pages/risorse.html" class="hover:text-primary">Risorse</a></li>
+                        <li><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></li>
+                        <li class="text-neutral-900">Test di Auto-valutazione</li>
+                    </ol>
+                </nav>
+
+                <!-- Hero Section -->
+                <div class="bg-gradient-to-br from-primary to-primary/80 text-white rounded-lg p-8 mb-8">
+                    <h1 class="text-3xl md:text-4xl font-bold mb-4 font-serif">
+                        Test di Auto-valutazione Completo
+                    </h1>
+                    <p class="text-xl opacity-90 leading-relaxed">
+                        Strumento professionale per riconoscere comportamenti violenti e ricevere indicazioni personalizzate per il cambiamento
+                    </p>
+                </div>
+
+                <!-- Important Notice -->
+                <div class="bg-orange-50 border-l-4 border-secondary p-6 mb-8">
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <svg class="h-5 w-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-3">
+                            <h3 class="text-sm font-medium text-secondary">
+                                Informazioni Importanti Prima di Iniziare
+                            </h3>
+                            <div class="mt-2 text-sm text-neutral-700">
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li>Questo test è per <strong>auto-riflessione</strong>, non è uno strumento diagnostico</li>
+                                    <li>Rispondi con <strong>onestà completa</strong> - è l'unico modo per ricevere risultati utili</li>
+                                    <li><strong>Non giudicare</strong> le tue risposte - riconoscere problemi è il primo passo verso il cambiamento</li>
+                                    <li>Considera di <strong>condividere i risultati</strong> con un professionista qualificato</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Test Instructions -->
+                <div class="bg-white rounded-lg shadow-sm p-8 mb-8">
+                    <h2 class="text-2xl font-bold text-neutral-900 mb-4 font-serif">Come Funziona il Test</h2>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <span class="text-primary font-bold text-xl">1</span>
+                            </div>
+                            <h3 class="font-semibold text-neutral-900 mb-2">60 Domande</h3>
+                            <p class="text-sm text-neutral-600">Rispondi a tutte le domande basandoti sulla tua esperienza degli ultimi 12 mesi</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <span class="text-secondary font-bold text-xl">2</span>
+                            </div>
+                            <h3 class="font-semibold text-neutral-900 mb-2">Valutazione</h3>
+                            <p class="text-sm text-neutral-600">Ricevi una valutazione immediata del tuo livello di rischio e comportamenti</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <span class="text-accent font-bold text-xl">3</span>
+                            </div>
+                            <h3 class="font-semibold text-neutral-900 mb-2">Piano d'Azione</h3>
+                            <p class="text-sm text-neutral-600">Ottieni raccomandazioni specifiche e risorse appropriate per il tuo caso</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Test Form -->
+                <div class="bg-white rounded-lg shadow-sm p-8">
+                    <form id="assessment-form">
+                        <div class="mb-8">
+                            <h2 class="text-2xl font-bold text-neutral-900 mb-6 font-serif">Parte 1: Controllo e Gelosia</h2>
+                            
+                            <!-- Response Scale Legend -->
+                            <div class="bg-neutral-50 p-4 rounded-lg mb-6">
+                                <h4 class="font-semibold text-neutral-900 mb-3">Scala di Risposta:</h4>
+                                <div class="grid grid-cols-5 gap-2 text-sm">
+                                    <div class="text-center p-2 bg-white rounded">
+                                        <div class="font-semibold">Mai (0)</div>
+                                        <div class="text-xs text-neutral-500">Non mi è mai capitato</div>
+                                    </div>
+                                    <div class="text-center p-2 bg-white rounded">
+                                        <div class="font-semibold">Raramente (1)</div>
+                                        <div class="text-xs text-neutral-500">1-2 volte</div>
+                                    </div>
+                                    <div class="text-center p-2 bg-white rounded">
+                                        <div class="font-semibold">Qualche volta (2)</div>
+                                        <div class="text-xs text-neutral-500">Alcune volte al mese</div>
+                                    </div>
+                                    <div class="text-center p-2 bg-white rounded">
+                                        <div class="font-semibold">Spesso (3)</div>
+                                        <div class="text-xs text-neutral-500">Settimanalmente</div>
+                                    </div>
+                                    <div class="text-center p-2 bg-white rounded">
+                                        <div class="font-semibold">Molto spesso (4)</div>
+                                        <div class="text-xs text-neutral-500">Quasi quotidianamente</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Sample Questions (subset of the 60) -->
+                            <div class="space-y-6">
+                                <div class="bg-neutral-50 p-6 rounded-lg">
+                                    <h4 class="font-semibold text-neutral-900 mb-4">Controllo Digitale e Social Media</h4>
+                                    <div class="space-y-4">
+                                        <div>
+                                            <p class="text-neutral-700 mb-3">1. Controllo i messaggi, email o social media della mia partner senza il suo permesso</p>
+                                            <div class="flex space-x-4">
+                                                <label class="flex items-center">
+                                                    <input type="radio" name="q1" value="0" class="mr-2 text-primary">
+                                                    <span class="text-sm">Mai (0)</span>
+                                                </label>
+                                                <label class="flex items-center">
+                                                    <input type="radio" name="q1" value="1" class="mr-2 text-primary">
+                                                    <span class="text-sm">Raramente (1)</span>
+                                                </label>
+                                                <label class="flex items-center">
+                                                    <input type="radio" name="q1" value="2" class="mr-2 text-primary">
+                                                    <span class="text-sm">Qualche volta (2)</span>
+                                                </label>
+                                                <label class="flex items-center">
+                                                    <input type="radio" name="q1" value="3" class="mr-2 text-primary">
+                                                    <span class="text-sm">Spesso (3)</span>
+                                                </label>
+                                                <label class="flex items-center">
+                                                    <input type="radio" name="q1" value="4" class="mr-2 text-primary">
+                                                    <span class="text-sm">Molto spesso (4)</span>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <p class="text-neutral-700 mb-3">2. Mi arrabbio se la mia partner non risponde immediatamente ai miei messaggi</p>
+                                            <div class="flex space-x-4">
+                                                <label class="flex items-center">
+                                                    <input type="radio" name="q2" value="0" class="mr-2 text-primary">
+                                                    <span class="text-sm">Mai (0)</span>
+                                                </label>
+                                                <label class="flex items-center">
+                                                    <input type="radio" name="q2" value="1" class="mr-2 text-primary">
+                                                    <span class="text-sm">Raramente (1)</span>
+                                                </label>
+                                                <label class="flex items-center">
+                                                    <input type="radio" name="q2" value="2" class="mr-2 text-primary">
+                                                    <span class="text-sm">Qualche volta (2)</span>
+                                                </label>
+                                                <label class="flex items-center">
+                                                    <input type="radio" name="q2" value="3" class="mr-2 text-primary">
+                                                    <span class="text-sm">Spesso (3)</span>
+                                                </label>
+                                                <label class="flex items-center">
+                                                    <input type="radio" name="q2" value="4" class="mr-2 text-primary">
+                                                    <span class="text-sm">Molto spesso (4)</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Note about full version -->
+                                <div class="bg-primary/10 border-l-4 border-primary p-6">
+                                    <h4 class="font-semibold text-primary mb-2">Versione Demo</h4>
+                                    <p class="text-neutral-700 mb-4">
+                                        Questa è una versione demo con solo 2 delle 60 domande totali. Il test completo include:
+                                    </p>
+                                    <ul class="text-sm text-neutral-600 space-y-1">
+                                        <li>• Controllo e Gelosia (15 domande)</li>
+                                        <li>• Comunicazione e Conflitti (15 domande)</li>
+                                        <li>• Comportamenti Fisici e Intimidazione (10 domande)</li>
+                                        <li>• Controllo Economico e Pratico (10 domande)</li>
+                                        <li>• Atteggiamenti e Credenze (10 domande)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                            <button type="button" onclick="evaluateDemo()" class="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-colors">
+                                📊 Valuta Demo (2 domande)
+                            </button>
+                            <a href="../../pages/contatti.html" class="border-2 border-primary text-primary px-8 py-3 rounded-lg font-semibold hover:bg-primary/5 transition-colors text-center">
+                                🤝 Richiedi Test Completo
+                            </a>
+                        </div>
+                    </form>
+
+                    <!-- Results Section -->
+                    <div id="results" class="mt-8 hidden">
+                        <div class="bg-gradient-to-r from-primary/10 to-secondary/10 p-6 rounded-lg">
+                            <h3 class="text-xl font-bold text-neutral-900 mb-4">Risultati Demo</h3>
+                            <div id="results-content"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Full Test Information -->
+                <div class="mt-8 bg-white rounded-lg shadow-sm p-8">
+                    <h2 class="text-2xl font-bold text-neutral-900 mb-6 font-serif">Il Test Completo Include</h2>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-lg font-semibold text-neutral-900 mb-4">Aree di Valutazione Completa</h3>
+                            <ul class="space-y-3 text-neutral-700">
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-primary mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span><strong>Controllo e Gelosia:</strong> 15 domande su controllo digitale, sociale e possessività</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-primary mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span><strong>Comunicazione:</strong> 15 domande su aggressività verbale e pattern di discussione</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-primary mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span><strong>Comportamenti Fisici:</strong> 10 domande su intimidazione e contatto fisico</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-primary mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span><strong>Controllo Economico:</strong> 10 domande su controllo finanziario e opportunità</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-primary mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span><strong>Atteggiamenti:</strong> 10 domande su credenze e giustificazioni</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-neutral-900 mb-4">Cosa Ricevi</h3>
+                            <ul class="space-y-3 text-neutral-700">
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-secondary mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                    </svg>
+                                    <span>Interpretazione dettagliata dei risultati</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-secondary mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                    </svg>
+                                    <span>Piano d'azione personalizzato per il tuo livello di rischio</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-secondary mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                    </svg>
+                                    <span>Risorse specifiche raccomandate</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-secondary mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                    </svg>
+                                    <span>Domande di riflessione profonda</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-secondary mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                    </svg>
+                                    <span>Contatti per supporto professionale</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact CTA -->
+                <div class="mt-8 bg-gradient-to-r from-primary to-secondary text-white rounded-lg p-8 text-center">
+                    <h3 class="text-2xl font-bold mb-4 font-serif">Pronto per il Test Completo?</h3>
+                    <p class="text-xl opacity-90 mb-6">
+                        Il test completo di 60 domande ti fornirà una valutazione approfondita e un piano d'azione personalizzato
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="../../pages/contatti.html" class="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-colors">
+                            📞 Richiedi Test Completo
+                        </a>
+                        <a href="../../pages/per-uomini.html" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors">
+                            📚 Altre Risorse per il Cambiamento
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-neutral-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <div class="flex items-center justify-center space-x-3 mb-4">
+                    <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">LS</span>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold">La Svolta</h3>
+                        <p class="text-sm text-gray-400">Centro di Supporto per il Cambiamento</p>
+                    </div>
+                </div>
+                <p class="text-gray-300 mb-4">
+                    📞 +39 340 123 4567 | ✉️ info@lasvolta.org
+                </p>
+                <div class="text-sm text-gray-400">
+                    <p>🆘 Emergenze: 112 | Anti-violenza: 1522</p>
+                    <p class="mt-2">© 2024 La Svolta. Tutti i diritti riservati.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ElevenLabs Voice Widget -->
+    <div id="voice-widget-container" class="fixed bottom-6 right-6 z-50">
+        <elevenlabs-convai agent-id="agent_5101k1fzj4w2fbqtqdfja05b4jx9"></elevenlabs-convai>
+    </div>
+
+    <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+
+    <script>
+        function evaluateDemo() {
+            const q1 = document.querySelector('input[name="q1"]:checked');
+            const q2 = document.querySelector('input[name="q2"]:checked');
+            
+            if (!q1 || !q2) {
+                alert('Per favore rispondi a entrambe le domande per vedere i risultati demo.');
+                return;
+            }
+            
+            const score = parseInt(q1.value) + parseInt(q2.value);
+            const resultsDiv = document.getElementById('results');
+            const resultsContent = document.getElementById('results-content');
+            
+            let interpretation = '';
+            
+            if (score === 0) {
+                interpretation = `
+                    <div class="bg-accent/10 border-l-4 border-accent p-4">
+                        <h4 class="font-semibold text-accent mb-2">Demo - Punteggio: ${score}/8</h4>
+                        <p class="text-neutral-700 mb-3">In base a queste due domande, non hai identificato comportamenti di controllo digitale.</p>
+                        <p class="text-sm text-neutral-600">Ricorda: questa è solo una demo con 2 domande delle 60 totali. Per una valutazione completa, è necessario il test completo.</p>
+                    </div>
+                `;
+            } else if (score <= 2) {
+                interpretation = `
+                    <div class="bg-secondary/10 border-l-4 border-secondary p-4">
+                        <h4 class="font-semibold text-secondary mb-2">Demo - Punteggio: ${score}/8</h4>
+                        <p class="text-neutral-700 mb-3">Hai identificato alcuni comportamenti di controllo digitale che potrebbero essere problematici.</p>
+                        <p class="text-sm text-neutral-600"><strong>Raccomandazione demo:</strong> Considera di esplorare strategie di comunicazione più sane e di riflettere su questi comportamenti.</p>
+                    </div>
+                `;
+            } else {
+                interpretation = `
+                    <div class="bg-danger/10 border-l-4 border-danger p-4">
+                        <h4 class="font-semibold text-danger mb-2">Demo - Punteggio: ${score}/8</h4>
+                        <p class="text-neutral-700 mb-3">I comportamenti di controllo digitale che hai identificato sono preoccupanti e potrebbero indicare pattern più ampi.</p>
+                        <p class="text-sm text-neutral-600"><strong>Raccomandazione demo:</strong> È importante cercare supporto professionale per esplorare questi comportamenti in modo più approfondito.</p>
+                    </div>
+                `;
+            }
+            
+            interpretation += `
+                <div class="mt-4 p-4 bg-primary/5 rounded">
+                    <h5 class="font-semibold text-primary mb-2">Prossimi Passi</h5>
+                    <ul class="text-sm text-neutral-600 space-y-1">
+                        <li>• Completa il test completo di 60 domande per una valutazione approfondita</li>
+                        <li>• Contatta La Svolta per una consulenza professionale</li>
+                        <li>• Esplora le altre risorse disponibili per il cambiamento</li>
+                    </ul>
+                </div>
+            `;
+            
+            resultsContent.innerHTML = interpretation;
+            resultsDiv.classList.remove('hidden');
+            resultsDiv.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

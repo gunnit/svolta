@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano di Sicurezza e Gestione delle Crisi - La Svolta</title>
+    <meta name="description" content="Guida completa per prevenire l'escalation violenta e gestire le crisi acute. Piano di sicurezza personalizzabile per situazioni di emergenza">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#4A90A4',
+              secondary: '#D97036',
+              accent: '#28A745',
+              danger: '#DC3545',
+              neutral: {
+                50: '#F8F9FA',
+                500: '#6C757D',
+                900: '#343A40'
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+              serif: ['Merriweather', 'serif']
+            }
+          }
+        }
+      }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Prose styles for articles */
+        .prose {
+            max-width: none;
+            color: var(--neutral-900);
+        }
+        .prose h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--neutral-900);
+            margin-bottom: 1.5rem;
+            font-family: 'Merriweather', serif;
+            line-height: 1.2;
+        }
+        .prose h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--neutral-900);
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+            font-family: 'Merriweather', serif;
+            line-height: 1.3;
+        }
+        .prose h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--neutral-900);
+            margin-bottom: 0.75rem;
+            margin-top: 1.5rem;
+            line-height: 1.4;
+        }
+        .prose h4 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--neutral-900);
+            margin-bottom: 0.5rem;
+            margin-top: 1rem;
+            line-height: 1.4;
+        }
+        .prose p {
+            color: var(--neutral-500);
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+        .prose ul, .prose ol {
+            margin-bottom: 1rem;
+            color: var(--neutral-500);
+            padding-left: 1.5rem;
+        }
+        .prose ul {
+            list-style-type: disc;
+        }
+        .prose ol {
+            list-style-type: decimal;
+        }
+        .prose li {
+            margin-bottom: 0.5rem;
+        }
+        .prose strong {
+            font-weight: 600;
+            color: var(--neutral-900);
+        }
+        .prose em {
+            font-style: italic;
+        }
+        .prose a {
+            color: var(--primary);
+            text-decoration: underline;
+            transition: color 0.2s ease;
+        }
+        .prose a:hover {
+            color: rgba(74, 144, 164, 0.8);
+        }
+        .prose hr {
+            border: none;
+            border-top: 1px solid #e5e7eb;
+            margin: 2rem 0;
+        }
+        
+        /* Special content blocks */
+        .prose .warning {
+            background: rgba(220, 53, 69, 0.1);
+            border-left: 4px solid var(--danger);
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 0 8px 8px 0;
+        }
+        .prose .info {
+            background: rgba(74, 144, 164, 0.1);
+            border-left: 4px solid var(--primary);
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 0 8px 8px 0;
+        }
+        .prose .success {
+            background: rgba(40, 167, 69, 0.1);
+            border-left: 4px solid var(--accent);
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 0 8px 8px 0;
+        }
+        .prose .emergency {
+            background: rgba(220, 53, 69, 0.2);
+            border: 2px solid var(--danger);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .prose .emergency h2 {
+            color: var(--danger);
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+        
+        /* Checklist styles */
+        .checklist {
+            background: var(--neutral-50);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        .checklist h4 {
+            margin-top: 0;
+            margin-bottom: 0.75rem;
+            color: var(--neutral-900);
+        }
+        .checklist ul {
+            margin-bottom: 0;
+        }
+        
+        /* Crisis protocol styles */
+        .crisis-protocol {
+            background: linear-gradient(to right, rgba(220, 53, 69, 0.1), rgba(217, 112, 54, 0.1));
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .crisis-protocol h4 {
+            color: var(--danger);
+            margin-top: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .prose h1 {
+                font-size: 2rem;
+            }
+            .prose h2 {
+                font-size: 1.75rem;
+            }
+            .prose h3 {
+                font-size: 1.5rem;
+            }
+            .checklist, .crisis-protocol, .prose .emergency {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans bg-neutral-50">
+    <!-- Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-40">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">LS</span>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-neutral-900">
+                            <a href="../../index.html" class="hover:text-primary transition-colors">La Svolta</a>
+                        </h1>
+                        <p class="text-sm text-neutral-500">Centro di Supporto</p>
+                    </div>
+                </div>
+                
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="../../index.html" class="text-neutral-700 hover:text-primary transition-colors">Home</a>
+                    <div class="relative group">
+                        <button class="text-neutral-700 hover:text-primary transition-colors flex items-center">
+                            Supporto
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-64 bg-white shadow-lg rounded-md py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <a href="../../pages/per-uomini.html" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-50">Per Gli Uomini</a>
+                            <a href="../../pages/per-familiari.html" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-50">Per Familiari e Amici</a>
+                            <a href="../../pages/per-professionisti.html" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-50">Per Professionisti</a>
+                        </div>
+                    </div>
+                    <a href="../../pages/risorse.html" class="text-neutral-700 hover:text-primary transition-colors">Risorse</a>
+                    <a href="../../pages/chi-siamo.html" class="text-neutral-700 hover:text-primary transition-colors">Chi Siamo</a>
+                    <a href="../../pages/contatti.html" class="bg-primary text-white px-6 py-2 rounded-md hover:bg-opacity-90 transition-colors">Contatti</a>
+                </div>
+                
+                <button id="mobile-menu-btn" class="lg:hidden text-neutral-700 hover:text-primary">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="py-8">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <!-- Breadcrumb -->
+                <nav class="mb-8">
+                    <ol class="flex items-center space-x-2 text-sm text-neutral-500">
+                        <li><a href="../../index.html" class="hover:text-primary">Home</a></li>
+                        <li><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></li>
+                        <li><a href="../../pages/risorse.html" class="hover:text-primary">Risorse</a></li>
+                        <li><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></li>
+                        <li class="text-neutral-900">Piano di Sicurezza e Gestione delle Crisi</li>
+                    </ol>
+                </nav>
+
+                <!-- Content -->
+                <article class="bg-white rounded-lg shadow-sm p-8">
+                    <div class="prose max-w-none">
+                        <h1>Piano di Sicurezza e Gestione delle Crisi: Guida per Prevenire l'Escalation Violenta</h1>
+
+                        <div class="emergency">
+                            <h2 class="text-xl font-bold text-danger mb-4">⚠️ INFORMAZIONI CRUCIALI DI EMERGENZA</h2>
+                            
+                            <p><strong>Se sei in immediato pericolo o hai pensieri di fare del male a te stesso o ad altri:</strong></p>
+                            <ul class="mb-4">
+                                <li><strong>Emergenze</strong>: 112</li>
+                                <li><strong>Numero Anti Violenza</strong>: 1522 (gratuito, attivo 24/7)</li>
+                                <li><strong>La Svolta - Linea Crisi</strong>: +39 340 123 4567</li>
+                            </ul>
+                            
+                            <p><strong>Se hai appena agito violenza:</strong></p>
+                            <ol>
+                                <li>Allontanati immediatamente dal luogo</li>
+                                <li>Chiama la linea di crisi</li>
+                                <li>Non tornare finché non sei accompagnato da un professionista</li>
+                                <li>Non cercare di "sistemare" la situazione da solo</li>
+                            </ol>
+                        </div>
+
+                        <h2>Parte 1: Comprendere le Crisi</h2>
+
+                        <h3>Che Cos'è una Crisi</h3>
+
+                        <p>Una crisi è un momento di <strong>intenso squilibrio emotivo</strong> in cui:</p>
+                        <ul>
+                            <li>I tuoi normali meccanismi di coping non funzionano</li>
+                            <li>Senti di perdere il controllo delle tue reazioni</li>
+                            <li>Il rischio di comportamenti violenti è elevato</li>
+                            <li>Le conseguenze delle tue azioni potrebbero essere irreversibili</li>
+                        </ul>
+
+                        <div class="warning">
+                            <strong>Le crisi sono temporanee, ma le loro conseguenze possono essere permanenti.</strong>
+                        </div>
+
+                        <h3>I Fattori Scatenanti Comuni</h3>
+
+                        <h4>Esterni:</h4>
+                        <ul>
+                            <li>Conflitti relazionali intensi</li>
+                            <li>Perdita del lavoro o stress finanziario</li>
+                            <li>Problemi legali o giudiziari</li>
+                            <li>Malattia o morte di persone care</li>
+                            <li>Abuso di alcol o sostanze</li>
+                            <li>Isolamento sociale prolungato</li>
+                        </ul>
+
+                        <h4>Interni:</h4>
+                        <ul>
+                            <li>Accumulo di stress non gestito</li>
+                            <li>Privazione del sonno cronica</li>
+                            <li>Problemi di salute mentale non trattati</li>
+                            <li>Ricordi traumatici riattivati</li>
+                            <li>Senso di impotenza o disperazione</li>
+                            <li>Paura dell'abbandono o del rifiuto</li>
+                        </ul>
+
+                        <h3>Le Fasi di Escalation della Crisi</h3>
+
+                        <div class="crisis-protocol">
+                            <h4>Fase 1 - Tensione Crescente (0-30 minuti)</h4>
+                            <ul>
+                                <li>Irritabilità e nervosismo</li>
+                                <li>Pensieri accelerati</li>
+                                <li>Difficoltà di concentrazione</li>
+                                <li>Tensione muscolare</li>
+                            </ul>
+
+                            <h4>Fase 2 - Escalation (30-60 minuti)</h4>
+                            <ul>
+                                <li>Aumento della reattività emotiva</li>
+                                <li>Pensieri catastrofici</li>
+                                <li>Senso di minaccia imminente</li>
+                                <li>Impulsi di aggressività</li>
+                            </ul>
+
+                            <h4>Fase 3 - Crisi Acuta (1-4 ore)</h4>
+                            <ul>
+                                <li>Perdita del controllo emotivo</li>
+                                <li>Pensiero irrazionale</li>
+                                <li>Alto rischio di violenza</li>
+                                <li>Comportamenti impulsivi e pericolosi</li>
+                            </ul>
+
+                            <h4>Fase 4 - Depressione/Esaurimento (4-24 ore)</h4>
+                            <ul>
+                                <li>Senso di vergogna e colpa</li>
+                                <li>Esaurimento emotivo e fisico</li>
+                                <li>Rischio di autolesionismo</li>
+                                <li>Isolamento sociale</li>
+                            </ul>
+                        </div>
+
+                        <h2>Parte 2: Piano di Prevenzione della Crisi</h2>
+
+                        <h3>Riconoscere i Segnali Precoci</h3>
+
+                        <div class="checklist">
+                            <h4>Fisici:</h4>
+                            <ul>
+                                <li>☐ Tensione alla mascella o ai pugni</li>
+                                <li>☐ Battito cardiaco accelerato</li>
+                                <li>☐ Respiro corto e superficiale</li>
+                                <li>☐ Sudorazione eccessiva</li>
+                                <li>☐ Tremori o agitazione</li>
+                                <li>☐ Mal di testa o tensione al collo</li>
+                                <li>☐ Problemi di stomaco</li>
+                            </ul>
+                        </div>
+
+                        <div class="checklist">
+                            <h4>Emotivi:</h4>
+                            <ul>
+                                <li>☐ Irritabilità crescente</li>
+                                <li>☐ Sensazione di essere "sul filo"</li>
+                                <li>☐ Ansia o preoccupazione intensa</li>
+                                <li>☐ Rabbia sproporzionata</li>
+                                <li>☐ Sentimenti di disperazione</li>
+                                <li>☐ Paura di perdere il controllo</li>
+                            </ul>
+                        </div>
+
+                        <div class="checklist">
+                            <h4>Mentali:</h4>
+                            <ul>
+                                <li>☐ Pensieri ricorrenti negativi</li>
+                                <li>☐ Difficoltà a concentrarsi</li>
+                                <li>☐ Pensieri di vendetta o punizione</li>
+                                <li>☐ Catastrofizzazione</li>
+                                <li>☐ Pensieri "tutto o niente"</li>
+                                <li>☐ Preoccupazioni ossessive</li>
+                            </ul>
+                        </div>
+
+                        <div class="checklist">
+                            <h4>Comportamentali:</h4>
+                            <ul>
+                                <li>☐ Isolamento dagli altri</li>
+                                <li>☐ Aumento dell'uso di alcol/droghe</li>
+                                <li>☐ Disturbi del sonno</li>
+                                <li>☐ Nervosismo o agitazione</li>
+                                <li>☐ Aggressività verbale</li>
+                                <li>☐ Comportamenti compulsivi</li>
+                            </ul>
+                        </div>
+
+                        <h3>Strategie di Intervento Precoce</h3>
+
+                        <div class="success">
+                            <p><strong>Quando Riconosci i Primi Segnali:</strong></p>
+
+                            <p><strong>1. FERMATI Immediatamente</strong></p>
+                            <ul>
+                                <li>Interrompi qualsiasi attività tu stia facendo</li>
+                                <li>Non prendere decisioni importanti</li>
+                                <li>Non confrontarti con altre persone</li>
+                            </ul>
+
+                            <p><strong>2. IMPLEMENTA la Strategia ABC</strong></p>
+                            <ul>
+                                <li><strong>A</strong>llontanati dalla situazione</li>
+                                <li><strong>B</strong>reathe (respira profondamente)</li>
+                                <li><strong>C</strong>hiama il supporto</li>
+                            </ul>
+
+                            <p><strong>3. USA le Tecniche di Grounding</strong></p>
+                            <ul>
+                                <li>Nomina 5 cose che vedi</li>
+                                <li>4 cose che puoi toccare</li>
+                                <li>3 cose che senti</li>
+                                <li>2 cose che annusi</li>
+                                <li>1 cosa che puoi gustare</li>
+                            </ul>
+                        </div>
+
+                        <h3>Il Tuo Kit di Emergenza Emotiva</h3>
+
+                        <div class="info">
+                            <p><strong>Crea una lista personalizzata di:</strong></p>
+
+                            <p><strong>Persone da Chiamare (in ordine di priorità):</strong></p>
+                            <ol>
+                                <li>Nome: _____________ Telefono: _____________</li>
+                                <li>Nome: _____________ Telefono: _____________</li>
+                                <li>Nome: _____________ Telefono: _____________</li>
+                                <li>Terapeuta: _________ Telefono: _____________</li>
+                                <li>Linea Crisi: +39 340 123 4567</li>
+                            </ol>
+
+                            <p><strong>Luoghi Sicuri Dove Andare:</strong></p>
+                            <ol>
+                                <li>_________________________________</li>
+                                <li>_________________________________</li>
+                                <li>_________________________________</li>
+                            </ol>
+
+                            <p><strong>Attività che Ti Calmano:</strong></p>
+                            <ol>
+                                <li>_________________________________</li>
+                                <li>_________________________________</li>
+                                <li>_________________________________</li>
+                            </ol>
+
+                            <p><strong>Frasi che Ti Aiutano:</strong></p>
+                            <ol>
+                                <li>_________________________________</li>
+                                <li>_________________________________</li>
+                                <li>_________________________________</li>
+                            </ol>
+                        </div>
+
+                        <h2>Parte 3: Gestione Della Crisi Acuta</h2>
+
+                        <h3>Se Senti che Stai Perdendo il Controllo</h3>
+
+                        <div class="emergency">
+                            <p><strong>PROTOCOLLO DI EMERGENZA IMMEDIATA:</strong></p>
+
+                            <p><strong>PASSO 1 - SICUREZZA FISICA</strong></p>
+                            <ul>
+                                <li>Esci immediatamente dall'ambiente</li>
+                                <li>Vai in un luogo pubblico e sicuro</li>
+                                <li>Non guidare se sei troppo agitato</li>
+                                <li>Chiama qualcuno per venire a prenderti</li>
+                            </ul>
+
+                            <p><strong>PASSO 2 - CONTATTO DI EMERGENZA</strong></p>
+                            <ul>
+                                <li>Chiama immediatamente la linea di crisi</li>
+                                <li>Se non rispondono, chiama il 112</li>
+                                <li>Identifica la tua situazione come "crisi di salute mentale"</li>
+                                <li>Chiedi di parlare con un operatore specializzato</li>
+                            </ul>
+
+                            <p><strong>PASSO 3 - STABILIZZAZIONE</strong></p>
+                            <ul>
+                                <li>Segui le istruzioni dell'operatore</li>
+                                <li>Non tornare a casa finché non sei completamente calmo</li>
+                                <li>Accetta l'aiuto professionale offerto</li>
+                                <li>Non minimizzare la gravità della situazione</li>
+                            </ul>
+                        </div>
+
+                        <h3>Tecniche di De-escalation Immediata</h3>
+
+                        <h4>Respirazione di Emergenza:</h4>
+                        <ol>
+                            <li>Inspira contando lentamente fino a 4</li>
+                            <li>Trattieni il respiro contando fino a 4</li>
+                            <li>Espira contando lentamente fino a 6</li>
+                            <li>Ripeti per almeno 10 cicli</li>
+                        </ol>
+
+                        <h4>Auto-Dialogo di Emergenza:</h4>
+                        <ul>
+                            <li>"Questo momento passerà"</li>
+                            <li>"Posso chiedere aiuto"</li>
+                            <li>"Non devo agire su questi impulsi"</li>
+                            <li>"Le mie emozioni sono intense ma temporanee"</li>
+                            <li>"Scegliere la violenza renderà tutto peggio"</li>
+                        </ul>
+
+                        <h4>Movimento per Scaricare l'Energia:</h4>
+                        <ul>
+                            <li>Camminata veloce per 15-20 minuti</li>
+                            <li>Corsa sul posto</li>
+                            <li>Flessioni o jumping jacks</li>
+                            <li>Doccia fredda</li>
+                            <li>Urlare in un cuscino (in privato)</li>
+                        </ul>
+
+                        <h3>Cosa NON Fare Durante una Crisi</h3>
+
+                        <div class="warning">
+                            <ul>
+                                <li>❌ <strong>NON confrontarti con la persona che ti ha scatenato</strong></li>
+                                <li>❌ <strong>NON prendere decisioni importanti</strong></li>
+                                <li>❌ <strong>NON usare alcol o droghe per calmarti</strong></li>
+                                <li>❌ <strong>NON guidare se sei molto agitato</strong></li>
+                                <li>❌ <strong>NON isolarti completamente</strong></li>
+                                <li>❌ <strong>NON minimizzare quello che stai provando</strong></li>
+                                <li>❌ <strong>NON tornare a casa finché non sei stabile</strong></li>
+                            </ul>
+                        </div>
+
+                        <h2>Parte 4: Dopo la Crisi - Recovery e Prevenzione</h2>
+
+                        <h3>Immediate Aftermath (Prime 24 ore)</h3>
+
+                        <h4>Priorità Fisiche:</h4>
+                        <ul>
+                            <li>Riposa e recupera energie</li>
+                            <li>Idratati e mangia cibi nutrienti</li>
+                            <li>Evita alcol e sostanze stimolanti</li>
+                            <li>Fai movimento leggero (camminata)</li>
+                        </ul>
+
+                        <h4>Priorità Emotive:</h4>
+                        <ul>
+                            <li>Elabora l'esperienza con un professionista</li>
+                            <li>Non giudicarti per aver avuto la crisi</li>
+                            <li>Riconosci di aver gestito la situazione senza violenza</li>
+                            <li>Identifica cosa ha funzionato e cosa no</li>
+                        </ul>
+
+                        <h4>Priorità Relazionali:</h4>
+                        <ul>
+                            <li>Se necessario, scusati per l'allarme causato</li>
+                            <li>Non cercare di "spiegare tutto" immediatamente</li>
+                            <li>Rispetta i tempi degli altri per elaborare</li>
+                            <li>Focalizzati su azioni concrete, non su parole</li>
+                        </ul>
+
+                        <h3>Piano di Prevenzione Personalizzato</h3>
+
+                        <div class="checklist">
+                            <h4>Modifiche allo Stile di Vita:</h4>
+                            <ul>
+                                <li>☐ Routine di sonno regolare (___ore per notte)</li>
+                                <li>☐ Esercizio fisico regolare (___volte a settimana)</li>
+                                <li>☐ Limitazione/eliminazione di alcol</li>
+                                <li>☐ Gestione dello stress lavorativo</li>
+                                <li>☐ Tempo regolare per hobby e relax</li>
+                            </ul>
+
+                            <h4>Supporto Professionale:</h4>
+                            <ul>
+                                <li>☐ Terapia individuale (____ volte al mese)</li>
+                                <li>☐ Gruppo di supporto (____ volte al mese)</li>
+                                <li>☐ Controllo medico per salute mentale</li>
+                                <li>☐ Possibile supporto farmacologico</li>
+                            </ul>
+
+                            <h4>Sistema di Monitoraggio:</h4>
+                            <ul>
+                                <li>☐ Check-in quotidiani con se stessi</li>
+                                <li>☐ Diario delle emozioni</li>
+                                <li>☐ Scala di stress settimanale (1-10)</li>
+                                <li>☐ Feedback regolare dal partner/famiglia</li>
+                            </ul>
+                        </div>
+
+                        <h2>Parte 5: Crisi Specifiche e Protocolli</h2>
+
+                        <h3>Crisi da Gelosia Ossessiva</h3>
+
+                        <p><strong>Segnali Specifici:</strong></p>
+                        <ul>
+                            <li>Pensieri ossessivi sulla fedeltà del partner</li>
+                            <li>Impulsi di controllo o sorveglianza</li>
+                            <li>Interpretazioni paranoiche di comportamenti normali</li>
+                            <li>Rabbia intensa verso "rivali" immaginari</li>
+                        </ul>
+
+                        <div class="success">
+                            <p><strong>Protocollo Specifico:</strong></p>
+                            <ol>
+                                <li><strong>Reality Check</strong>: "Questi sono pensieri ossessivi, non realtà"</li>
+                                <li><strong>Distanza Fisica</strong>: Allontanati dal partner per permettere chiarezza</li>
+                                <li><strong>Verifica Razionale</strong>: Chiama un amico fidato per prospettiva esterna</li>
+                                <li><strong>Supporto Specializzato</strong>: Contatta terapeuta specializzato in gelosia</li>
+                            </ol>
+                        </div>
+
+                        <h3>Crisi da Rifiuto/Abbandono</h3>
+
+                        <p><strong>Segnali Specifici:</strong></p>
+                        <ul>
+                            <li>Paura panica di essere lasciato</li>
+                            <li>Disperazione emotiva intensa</li>
+                            <li>Impulsi di controllo o manipolazione</li>
+                            <li>Pensieri suicidari o di autolesionismo</li>
+                        </ul>
+
+                        <div class="emergency">
+                            <p><strong>Protocollo Specifico:</strong></p>
+                            <ol>
+                                <li><strong>Sicurezza Immediata</strong>: Se hai pensieri suicidari, chiama 112</li>
+                                <li><strong>Verifica della Realtà</strong>: "Il rifiuto non significa che non valgo nulla"</li>
+                                <li><strong>Supporto Emotivo</strong>: Chiama una persona di fiducia</li>
+                                <li><strong>Piano di Sopravvivenza</strong>: Attiva tutte le risorse di supporto disponibili</li>
+                            </ol>
+                        </div>
+
+                        <h2>Parte 6: Supportare Altri in Crisi</h2>
+
+                        <h3>Se Qualcuno Ti Chiede Aiuto Durante una Crisi</h3>
+
+                        <div class="success">
+                            <p><strong>DO's (Cosa Fare):</strong></p>
+                            <ul>
+                                <li>✅ Ascolta senza giudicare</li>
+                                <li>✅ Prendi sul serio la situazione</li>
+                                <li>✅ Incoraggia la ricerca di aiuto professionale</li>
+                                <li>✅ Resta calmo e presente</li>
+                                <li>✅ Aiuta a contattare i servizi di emergenza se necessario</li>
+                                <li>✅ Seguiti nei giorni successivi</li>
+                            </ul>
+                        </div>
+
+                        <div class="warning">
+                            <p><strong>DON'Ts (Cosa NON Fare):</strong></p>
+                            <ul>
+                                <li>❌ Non minimizzare i loro sentimenti</li>
+                                <li>❌ Non dare consigli non richiesti</li>
+                                <li>❌ Non prenderti responsabilità oltre le tue competenze</li>
+                                <li>❌ Non promettere segreti se c'è pericolo</li>
+                                <li>❌ Non cercare di "aggiustare" la situazione</li>
+                                <li>❌ Non isolarti dal supporto professionale</li>
+                            </ul>
+                        </div>
+
+                        <h2>Parte 7: Risorse di Emergenza Complete</h2>
+
+                        <h3>Numeri di Emergenza Nazionali</h3>
+
+                        <div class="info">
+                            <p><strong>Emergenze Generali:</strong></p>
+                            <ul>
+                                <li><strong>112</strong> - Emergenze (Polizia, Ambulanza, Vigili del Fuoco)</li>
+                                <li><strong>113</strong> - Polizia di Stato</li>
+                                <li><strong>118</strong> - Emergenza Sanitaria</li>
+                            </ul>
+
+                            <p><strong>Violenza e Supporto:</strong></p>
+                            <ul>
+                                <li><strong>1522</strong> - Numero Anti Violenza e Stalking (gratuito, 24/7)</li>
+                                <li><strong>800 290 290</strong> - Telefono Azzurro (emergenze minori)</li>
+                                <li><strong>199 284 284</strong> - Telefono Amico (supporto psicologico)</li>
+                            </ul>
+
+                            <p><strong>Salute Mentale:</strong></p>
+                            <ul>
+                                <li><strong>800 833 833</strong> - Numero Verde Salute Mentale</li>
+                                <li><strong>02 29529424</strong> - AIPD Telefono di Supporto</li>
+                            </ul>
+                        </div>
+
+                        <h3>La Svolta - Servizi di Crisi</h3>
+
+                        <div class="emergency">
+                            <p><strong>Linea Crisi 24/7:</strong> +39 340 123 4567</p>
+                            <ul>
+                                <li>Intervento telefonico immediato</li>
+                                <li>Valutazione del rischio</li>
+                                <li>Orientamento ai servizi appropriati</li>
+                                <li>Follow-up post-crisi</li>
+                            </ul>
+
+                            <p><strong>Servizi di Emergenza:</strong></p>
+                            <ul>
+                                <li>Intervento domiciliare (entro 2 ore)</li>
+                                <li>Accompagnamento ai servizi sanitari</li>
+                                <li>Mediazione familiare di emergenza</li>
+                                <li>Supporto legale immediato</li>
+                            </ul>
+
+                            <p><strong>Email Crisi:</strong> crisi@lasvolta.org</p>
+                            <ul>
+                                <li>Risposta entro 1 ora (orario ufficio)</li>
+                                <li>Risposta entro 4 ore (weekend/notti)</li>
+                            </ul>
+                        </div>
+
+                        <h2>Conclusione: La Forza Nella Vulnerabilità</h2>
+
+                        <p>Creare e seguire un piano di sicurezza per le crisi non è un segno di debolezza, ma di responsabilità e maturità. Riconoscere che puoi perdere il controllo e prepararti per questi momenti protegge te stesso e le persone che ami.</p>
+
+                        <h3>Ricorda Sempre:</h3>
+
+                        <ol>
+                            <li><strong>Le Crisi Sono Temporanee</strong>: Anche il dolore più intenso passerà</li>
+                            <li><strong>Chiedere Aiuto È Forza</strong>: Non devi gestire tutto da solo</li>
+                            <li><strong>La Prevenzione È Possibile</strong>: Puoi imparare a riconoscere e gestire le crisi prima che escalino</li>
+                            <li><strong>Il Recupero È Possibile</strong>: Ogni crisi gestita senza violenza è una vittoria</li>
+                            <li><strong>Non Sei Solo</strong>: C'è sempre qualcuno disposto ad aiutarti</li>
+                        </ol>
+
+                        <div class="success">
+                            <h3>Il Tuo Impegno</h3>
+                            <p>Compila questo piano con informazioni specifiche per la tua situazione. Condividilo con le persone di fiducia. Rivedilo e aggiornalo regolarmente. Pratica le tecniche quando sei calmo in modo che siano disponibili quando ne hai bisogno.</p>
+                            <p><strong>La differenza tra una crisi che distrugge e una che trasforma è la preparazione e il supporto che hai messo in atto prima che arrivi.</strong></p>
+                        </div>
+
+                        <hr>
+
+                        <p><em>Questo piano di sicurezza è stato sviluppato in collaborazione con professionisti della salute mentale specializzati nella gestione delle crisi. Adattalo alle tue esigenze specifiche e condividilo con il tuo team di supporto.</em></p>
+
+                        <p><strong>Per supporto immediato:</strong><br>
+                        📞 <strong>Linea Crisi</strong>: +39 340 123 4567<br>
+                        ✉️ <strong>Email Emergenza</strong>: crisi@lasvolta.org<br>
+                        🌐 <strong>www.lasvolta.org/emergenza</strong></p>
+                    </div>
+                </article>
+
+                <!-- Footer Actions -->
+                <div class="mt-8 bg-gradient-to-r from-danger/10 to-secondary/10 rounded-lg p-6">
+                    <div class="flex flex-col md:flex-row items-center justify-between">
+                        <div class="mb-4 md:mb-0">
+                            <h3 class="text-lg font-semibold text-neutral-900 mb-1">In crisi? Hai bisogno di aiuto immediato?</h3>
+                            <p class="text-neutral-600">Non aspettare - contatta subito la nostra linea di crisi</p>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <a href="tel:+393401234567" class="bg-danger text-white px-6 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition-colors">
+                                Chiama Ora: +39 340 123 4567
+                            </a>
+                            <a href="../../pages/contatti.html" class="border border-primary text-primary px-6 py-2 rounded-lg font-semibold hover:bg-primary/5 transition-colors">
+                                Altri Contatti
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-neutral-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <div class="flex items-center justify-center space-x-3 mb-4">
+                    <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">LS</span>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold">La Svolta</h3>
+                        <p class="text-sm text-gray-400">Centro di Supporto per il Cambiamento</p>
+                    </div>
+                </div>
+                <p class="text-gray-300 mb-4">
+                    📞 +39 340 123 4567 | ✉️ info@lasvolta.org
+                </p>
+                <div class="text-sm text-gray-400">
+                    <p>🆘 Emergenze: 112 | Anti-violenza: 1522</p>
+                    <p class="mt-2">© 2024 La Svolta. Tutti i diritti riservati.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ElevenLabs Voice Widget -->
+    <div id="voice-widget-container" class="fixed bottom-6 right-6 z-50">
+        <elevenlabs-convai agent-id="agent_5101k1fzj4w2fbqtqdfja05b4jx9"></elevenlabs-convai>
+    </div>
+
+    <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+</body>
+</html>
