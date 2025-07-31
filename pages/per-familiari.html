@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Per Familiari e Amici - La Svolta</title>
+    <meta name="description" content="Guida per familiari e amici che vogliono aiutare una persona con comportamenti violenti. Risorse, consigli e supporto professionale.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#4A90A4',
+              secondary: '#D97036',
+              accent: '#28A745',
+              danger: '#DC3545',
+              neutral: {
+                50: '#F8F9FA',
+                500: '#6C757D',
+                900: '#343A40'
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+              serif: ['Merriweather', 'serif']
+            }
+          }
+        }
+      }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-40">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">LS</span>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-neutral-900">
+                            <a href="../index.html" class="hover:text-primary transition-colors">La Svolta</a>
+                        </h1>
+                        <p class="text-sm text-neutral-500">Centro di Supporto</p>
+                    </div>
+                </div>
+                
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="../index.html" class="text-neutral-700 hover:text-primary transition-colors">Home</a>
+                    <div class="relative group">
+                        <button class="text-primary font-semibold flex items-center">
+                            Supporto
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-64 bg-white shadow-lg rounded-md py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <a href="per-uomini.html" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-50">Per Gli Uomini</a>
+                            <a href="per-familiari.html" class="block px-4 py-2 text-sm text-primary bg-primary/5">Per Familiari e Amici</a>
+                            <a href="per-professionisti.html" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-50">Per Professionisti</a>
+                        </div>
+                    </div>
+                    <a href="risorse.html" class="text-neutral-700 hover:text-primary transition-colors">Risorse</a>
+                    <a href="chi-siamo.html" class="text-neutral-700 hover:text-primary transition-colors">Chi Siamo</a>
+                    <a href="contatti.html" class="bg-primary text-white px-6 py-2 rounded-md hover:bg-opacity-90 transition-colors">Contatti</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-br from-secondary to-secondary/80 text-white py-20">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6 font-serif">
+                        Supporto per <span class="text-primary">Familiari e Amici</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl mb-8 opacity-90 leading-relaxed">
+                        Aiutare una persona cara con comportamenti violenti non è facile. 
+                        Qui trovi strumenti, consigli e supporto per affrontare questa situazione delicata.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                        <a href="../pages/contatti.html" class="bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition-colors shadow-lg">
+                            Chiedi Aiuto Ora
+                        </a>
+                        <a href="#conversazioni" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-secondary transition-colors">
+                            Guida alle Conversazioni
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Section -->
+        <section class="py-12 bg-danger text-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto" data-aos="fade-up">
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold mb-4">Importante: La Tua Sicurezza Prima di Tutto</h2>
+                            <div class="grid md:grid-cols-2 gap-6 text-sm">
+                                <div>
+                                    <h3 class="font-semibold mb-2">Se sei in pericolo immediato:</h3>
+                                    <ul class="space-y-1 opacity-90">
+                                        <li>📞 Chiama subito il 112</li>
+                                        <li>🏃‍♀️ Allontanati dalla situazione</li>
+                                        <li>🏠 Vai in un luogo sicuro</li>
+                                        <li>💬 Contatta il 1522 (numero antiviolenza)</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold mb-2">Non è colpa tua se:</h3>
+                                    <ul class="space-y-1 opacity-90">
+                                        <li>✓ La persona non accetta aiuto</li>
+                                        <li>✓ I tuoi tentativi non funzionano</li>
+                                        <li>✓ La situazione peggiora</li>
+                                        <li>✓ Devi proteggere te stesso/a</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Understanding Section -->
+        <section class="py-20">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-16" data-aos="fade-up">
+                        <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 mb-6 font-serif">
+                            Comprendere la Situazione
+                        </h2>
+                        <p class="text-lg text-neutral-600 leading-relaxed">
+                            Prima di agire, è importante capire la dinamica della violenza e i suoi effetti 
+                            su chi la agisce e su chi la subisce.
+                        </p>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+                        <div data-aos="fade-right">
+                            <h3 class="text-2xl font-bold text-neutral-900 mb-6">Segnali da Riconoscere</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <div class="w-6 h-6 bg-secondary/10 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                                        <div class="w-2 h-2 bg-secondary rounded-full"></div>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-neutral-900 mb-1">Cambiamenti Comportamentali</h4>
+                                        <p class="text-neutral-600 text-sm">Isolamento sociale, aggressività crescente, controllo eccessivo</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="w-6 h-6 bg-secondary/10 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                                        <div class="w-2 h-2 bg-secondary rounded-full"></div>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-neutral-900 mb-1">Giustificazioni Continue</h4>
+                                        <p class="text-neutral-600 text-sm">"È colpa sua", "Mi ha provocato", "Non volevo farlo"</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="w-6 h-6 bg-secondary/10 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                                        <div class="w-2 h-2 bg-secondary rounded-full"></div>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-neutral-900 mb-1">Ciclo di Violenza</h4>
+                                        <p class="text-neutral-600 text-sm">Tensione → Esplosione → Scuse → Luna di miele → Ripetizione</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="w-6 h-6 bg-secondary/10 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                                        <div class="w-2 h-2 bg-secondary rounded-full"></div>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-neutral-900 mb-1">Resistenza al Cambiamento</h4>
+                                        <p class="text-neutral-600 text-sm">Minimizzazione del problema, rifiuto di cercare aiuto</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-neutral-50 p-8 rounded-lg" data-aos="fade-left">
+                            <h3 class="text-xl font-bold text-neutral-900 mb-4">Miti da Sfatare</h3>
+                            <div class="space-y-4">
+                                <div class="bg-white p-4 rounded-md border-l-4 border-danger">
+                                    <h4 class="font-semibold text-danger mb-1">❌ "È solo un periodo difficile"</h4>
+                                    <p class="text-sm text-neutral-700">La violenza tende a peggiorare nel tempo senza intervento professionale</p>
+                                </div>
+                                <div class="bg-white p-4 rounded-md border-l-4 border-danger">
+                                    <h4 class="font-semibold text-danger mb-1">❌ "L'amore lo cambierà"</h4>
+                                    <p class="text-sm text-neutral-700">Il cambiamento richiede consapevolezza e lavoro professionale</p>
+                                </div>
+                                <div class="bg-white p-4 rounded-md border-l-4 border-danger">
+                                    <h4 class="font-semibold text-danger mb-1">❌ "È colpa della vittima"</h4>
+                                    <p class="text-sm text-neutral-700">Nessuno merita di essere maltrattato, mai</p>
+                                </div>
+                                <div class="bg-white p-4 rounded-md border-l-4 border-accent">
+                                    <h4 class="font-semibold text-accent mb-1">✅ Il cambiamento è possibile</h4>
+                                    <p class="text-sm text-neutral-700">Con il giusto supporto professionale e motivazione</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How to Help Section -->
+        <section id="conversazioni" class="py-20 bg-neutral-50">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-16" data-aos="fade-up">
+                        <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 mb-6 font-serif">
+                            Come Affrontare Conversazioni Difficili
+                        </h2>
+                        <p class="text-lg text-neutral-600 leading-relaxed">
+                            Approcci pratici per parlare con una persona cara che ha comportamenti violenti.
+                        </p>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-8 mb-16">
+                        <!-- Do's -->
+                        <div class="bg-white rounded-lg p-8 shadow-md" data-aos="fade-up" data-aos-delay="100">
+                            <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-accent text-center mb-6">Cosa FARE</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <svg class="w-5 h-5 text-accent mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <div>
+                                        <h4 class="font-semibold text-neutral-900 mb-1">Scegli il momento giusto</h4>
+                                        <p class="text-sm text-neutral-600">Quando è calmo, in privato, senza fretta</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <svg class="w-5 h-5 text-accent mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <div>
+                                        <h4 class="font-semibold text-neutral-900 mb-1">Usa il linguaggio "io"</h4>
+                                        <p class="text-sm text-neutral-600">"Sono preoccupato/a per te" invece di "Tu sei violento"</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <svg class="w-5 h-5 text-accent mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <div>
+                                        <h4 class="font-semibold text-neutral-900 mb-1">Ascolta senza giudicare</h4>
+                                        <p class="text-sm text-neutral-600">Mostra comprensione per le sue difficoltà</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <svg class="w-5 h-5 text-accent mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <div>
+                                        <h4 class="font-semibold text-neutral-900 mb-1">Offri supporto concreto</h4>
+                                        <p class="text-sm text-neutral-600">"Ti aiuto a trovare uno specialista"</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <svg class="w-5 h-5 text-accent mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <div>
+                                        <h4 class="font-semibold text-neutral-900 mb-1">Mantieni i confini</h4>
+                                        <p class="text-sm text-neutral-600">Sii chiaro sui comportamenti inaccettabili</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Don'ts -->
+                        <div class="bg-white rounded-lg p-8 shadow-md" data-aos="fade-up" data-aos-delay="200">
+                            <div class="w-16 h-16 bg-danger/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <svg class="w-8 h-8 text-danger" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-danger text-center mb-6">Cosa NON FARE</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <svg class="w-5 h-5 text-danger mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                    </svg>
+                                    <div>
+                                        <h4 class="font-semibold text-neutral-900 mb-1">Non confrontarlo quando è arrabbiato</h4>
+                                        <p class="text-sm text-neutral-600">Potresti scatenare una reazione violenta</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <svg class="w-5 h-5 text-danger mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                    </svg>
+                                    <div>
+                                        <h4 class="font-semibold text-neutral-900 mb-1">Non dare ultimatum</h4>
+                                        <p class="text-sm text-neutral-600">"O cerchi aiuto o..." può essere controproducente</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <svg class="w-5 h-5 text-danger mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                    </svg>
+                                    <div>
+                                        <h4 class="font-semibold text-neutral-900 mb-1">Non minimizzare</h4>
+                                        <p class="text-sm text-neutral-600">"Non è poi così grave" invalida i sentimenti</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <svg class="w-5 h-5 text-danger mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                    </svg>
+                                    <div>
+                                        <h4 class="font-semibold text-neutral-900 mb-1">Non giustificare i comportamenti</h4>
+                                        <p class="text-sm text-neutral-600">Anche se capisci le cause, la violenza è inaccettabile</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <svg class="w-5 h-5 text-danger mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                    </svg>
+                                    <div>
+                                        <h4 class="font-semibold text-neutral-900 mb-1">Non fare tutto da solo/a</h4>
+                                        <p class="text-sm text-neutral-600">Cerca supporto professionale anche per te</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Conversation Examples -->
+                    <div class="bg-white rounded-lg p-8 shadow-md" data-aos="fade-up">
+                        <h3 class="text-2xl font-bold text-neutral-900 mb-6 text-center">Esempi di Conversazioni</h3>
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="text-lg font-semibold text-accent mb-4">✅ Approccio Efficace</h4>
+                                <div class="bg-accent/5 p-4 rounded-lg space-y-3">
+                                    <div class="bg-white p-3 rounded border-l-4 border-accent">
+                                        <p class="text-sm text-neutral-700 italic">
+                                            "Ho notato che ultimamente sembri molto stressato. Mi preoccupo per te e per come stai gestendo le situazioni difficili. Pensi che potrebbe aiutarti parlare con qualcuno?"
+                                        </p>
+                                    </div>
+                                    <div class="bg-white p-3 rounded border-l-4 border-accent">
+                                        <p class="text-sm text-neutral-700 italic">
+                                            "So che non è facile, ma voglio che tu sappia che ti voglio bene e sono qui per supportarti se decidi di chiedere aiuto."
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-lg font-semibold text-danger mb-4">❌ Approccio Controproducente</h4>
+                                <div class="bg-danger/5 p-4 rounded-lg space-y-3">
+                                    <div class="bg-white p-3 rounded border-l-4 border-danger">
+                                        <p class="text-sm text-neutral-700 italic">
+                                            "Sei sempre violento! Non riesci mai a controllarti! Devi assolutamente andare da uno psicologo!"
+                                        </p>
+                                    </div>
+                                    <div class="bg-white p-3 rounded border-l-4 border-danger">
+                                        <p class="text-sm text-neutral-700 italic">
+                                            "Se non cambi subito, chiamo la polizia e basta!"
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Self-Care Section -->
+        <section class="py-20">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <div class="text-center mb-16" data-aos="fade-up">
+                        <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 mb-6 font-serif">
+                            Prenditi Cura di Te Stesso/a
+                        </h2>
+                        <p class="text-lg text-neutral-600 leading-relaxed">
+                            Aiutare qualcuno con comportamenti violenti può essere emotivamente estenuante. 
+                            È fondamentale che tu protegga il tuo benessere.
+                        </p>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                            <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-neutral-900 mb-4">Cura di Sé</h3>
+                            <ul class="text-neutral-600 space-y-2 text-sm">
+                                <li>• Mantieni le tue relazioni sociali</li>
+                                <li>• Dedica tempo ai tuoi hobby</li>
+                                <li>• Pratica esercizio fisico</li>
+                                <li>• Dormi a sufficienza</li>
+                                <li>• Mangia in modo sano</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                            <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-6">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-neutral-900 mb-4">Supporto Sociale</h3>
+                            <ul class="text-neutral-600 space-y-2 text-sm">
+                                <li>• Parla con amici fidati</li>
+                                <li>• Cerca gruppi di supporto</li>
+                                <li>• Non isolarti</li>
+                                <li>• Condividi le tue preoccupazioni</li>
+                                <li>• Accetta aiuto dagli altri</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                            <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-6">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-neutral-900 mb-4">Aiuto Professionale</h3>
+                            <ul class="text-neutral-600 space-y-2 text-sm">
+                                <li>• Considera la terapia individuale</li>
+                                <li>• Consulta un counselor</li>
+                                <li>• Contatta servizi specializzati</li>
+                                <li>• Non vergognarti di chiedere aiuto</li>
+                                <li>• Anche tu meriti supporto</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-16 bg-primary/10 p-8 rounded-lg text-center" data-aos="fade-up">
+                        <h3 class="text-2xl font-bold text-neutral-900 mb-4">Ricorda</h3>
+                        <div class="grid md:grid-cols-2 gap-6 text-left">
+                            <div>
+                                <h4 class="font-semibold text-neutral-900 mb-2">Non sei responsabile per:</h4>
+                                <ul class="text-neutral-700 space-y-1 text-sm">
+                                    <li>✗ Il comportamento violento dell'altra persona</li>
+                                    <li>✗ "Curare" o cambiare qualcuno</li>
+                                    <li>✗ Risolvere tutti i problemi</li>
+                                    <li>✗ Mettere a rischio la tua sicurezza</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-neutral-900 mb-2">Sei responsabile per:</h4>
+                                <ul class="text-neutral-700 space-y-1 text-sm">
+                                    <li>✓ La tua sicurezza e benessere</li>
+                                    <li>✓ Stabilire confini sani</li>
+                                    <li>✓ Cercare supporto quando ne hai bisogno</li>
+                                    <li>✓ Prendere decisioni che ti proteggono</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section class="py-20 bg-neutral-50">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-16" data-aos="fade-up">
+                        <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 mb-6 font-serif">
+                            Risorse per Familiari
+                        </h2>
+                        <p class="text-lg text-neutral-600 leading-relaxed">
+                            Materiali e strumenti specifici per chi vuole aiutare una persona cara.
+                        </p>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay="100">
+                            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-lg font-bold text-neutral-900 mb-3">Guida alle Conversazioni Difficili</h3>
+                            <p class="text-neutral-600 text-sm mb-4 leading-relaxed">
+                                Strategie pratiche per affrontare discussioni delicate e aprire il dialogo 
+                                sul cambiamento in modo costruttivo.
+                            </p>
+                            <button class="text-primary font-semibold text-sm hover:text-primary/80 transition-colors">
+                                Scarica PDF →
+                            </button>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay="200">
+                            <div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-lg font-bold text-neutral-900 mb-3">Checklist di Sicurezza</h3>
+                            <p class="text-neutral-600 text-sm mb-4 leading-relaxed">
+                                Lista completa per valutare i rischi e pianificare strategie di protezione 
+                                per te e la tua famiglia.
+                            </p>
+                            <button class="text-secondary font-semibold text-sm hover:text-secondary/80 transition-colors">
+                                Scarica Lista →
+                            </button>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay="300">
+                            <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-lg font-bold text-neutral-900 mb-3">Network di Supporto</h3>
+                            <p class="text-neutral-600 text-sm mb-4 leading-relaxed">
+                                Contatti di associazioni, gruppi di auto-aiuto e servizi specializzati 
+                                per familiari di persone violente.
+                            </p>
+                            <button class="text-accent font-semibold text-sm hover:text-accent/80 transition-colors">
+                                Vedi Contatti →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 bg-gradient-to-r from-secondary to-primary text-white">
+            <div class="container mx-auto px-4 text-center" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 font-serif">
+                    Non Affrontare Tutto da Solo/a
+                </h2>
+                <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto leading-relaxed">
+                    Aiutare qualcuno con comportamenti violenti è complesso. 
+                    Il nostro team di esperti può guidarti in questo percorso difficile.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+                    <a href="contatti.html" class="bg-white text-secondary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition-colors shadow-lg">
+                        Contattaci per Supporto
+                    </a>
+                    <a href="tel:+393401234567" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-secondary transition-colors flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                        </svg>
+                        Chiamaci Subito
+                    </a>
+                </div>
+                
+                <div class="text-sm opacity-80 space-y-2">
+                    <p>🔒 Conversazione riservata e professionale</p>
+                    <p>✅ Consulenza specializzata per familiari</p>
+                    <p>📅 Supporto disponibile anche nei weekend</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-neutral-900 text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">LS</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">La Svolta</h3>
+                            <p class="text-sm text-gray-400">Centro di Supporto per il Cambiamento</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Da oltre 15 anni aiutiamo uomini a riconoscere e cambiare comportamenti violenti, 
+                        supportando al contempo le famiglie nel loro percorso di guarigione.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Link Utili</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="per-uomini.html" class="text-gray-300 hover:text-primary transition-colors">Per Gli Uomini</a></li>
+                        <li><a href="per-familiari.html" class="text-secondary font-semibold">Per Familiari</a></li>
+                        <li><a href="per-professionisti.html" class="text-gray-300 hover:text-primary transition-colors">Per Professionisti</a></li>
+                        <li><a href="risorse.html" class="text-gray-300 hover:text-primary transition-colors">Risorse</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contatti Emergenza</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2 text-danger" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                            <span class="text-gray-300">112 - Emergenze</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                            <span class="text-gray-300">1522 - Violenza Donne</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-sm text-gray-400">
+                    © 2024 La Svolta. Tutti i diritti riservati.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ElevenLabs Voice Widget -->
+    <div id="voice-widget-container" class="fixed bottom-6 right-6 z-50">
+        <elevenlabs-convai agent-id="agent_5101k1fzj4w2fbqtqdfja05b4jx9"></elevenlabs-convai>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

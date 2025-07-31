@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Per Professionisti - La Svolta</title>
+    <meta name="description" content="Servizi di referral per professionisti legali e sociali. Protocolli di invio, materiali informativi e collaborazioni per La Svolta.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#4A90A4',
+              secondary: '#D97036',
+              accent: '#28A745',
+              danger: '#DC3545',
+              neutral: {
+                50: '#F8F9FA',
+                500: '#6C757D',
+                900: '#343A40'
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+              serif: ['Merriweather', 'serif']
+            }
+          }
+        }
+      }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-40">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">LS</span>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-neutral-900">
+                            <a href="../index.html" class="hover:text-primary transition-colors">La Svolta</a>
+                        </h1>
+                        <p class="text-sm text-neutral-500">Centro di Supporto</p>
+                    </div>
+                </div>
+                
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="../index.html" class="text-neutral-700 hover:text-primary transition-colors">Home</a>
+                    <div class="relative group">
+                        <button class="text-primary font-semibold flex items-center">
+                            Supporto
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-64 bg-white shadow-lg rounded-md py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <a href="per-uomini.html" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-50">Per Gli Uomini</a>
+                            <a href="per-familiari.html" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-50">Per Familiari e Amici</a>
+                            <a href="per-professionisti.html" class="block px-4 py-2 text-sm text-primary bg-primary/5">Per Professionisti</a>
+                        </div>
+                    </div>
+                    <a href="risorse.html" class="text-neutral-700 hover:text-primary transition-colors">Risorse</a>
+                    <a href="chi-siamo.html" class="text-neutral-700 hover:text-primary transition-colors">Chi Siamo</a>
+                    <a href="contatti.html" class="bg-primary text-white px-6 py-2 rounded-md hover:bg-opacity-90 transition-colors">Contatti</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-br from-accent to-accent/80 text-white py-20">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6 font-serif">
+                        Collaborazioni <span class="text-secondary">Professionali</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl mb-8 opacity-90 leading-relaxed">
+                        Servizi specializzati per avvocati, assistenti sociali, psicologi e operatori 
+                        che desiderano indirizzare i propri clienti verso percorsi di recupero efficaci.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                        <a href="#protocollo" class="bg-secondary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition-colors shadow-lg">
+                            Protocollo di Referral
+                        </a>
+                        <a href="../pages/contatti.html" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-accent transition-colors">
+                            Contatti Professionali
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Target Professionals -->
+        <section class="py-20">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-16" data-aos="fade-up">
+                        <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 mb-6 font-serif">
+                            A Chi Ci Rivolgiamo
+                        </h2>
+                        <p class="text-lg text-neutral-600 leading-relaxed">
+                            Collaboriamo con diversi professionisti per creare una rete di supporto integrata 
+                            e multidisciplinare nel trattamento della violenza.
+                        </p>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                            <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-neutral-900 mb-3">Avvocati</h3>
+                            <p class="text-neutral-600 text-sm leading-relaxed">
+                                Penalisti, familiaristi e civilisti che gestiscono casi di violenza domestica 
+                                e necessitano di percorsi riabilitativi.
+                            </p>
+                        </div>
+                        
+                        <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                            <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-neutral-900 mb-3">Assistenti Sociali</h3>
+                            <p class="text-neutral-600 text-sm leading-relaxed">
+                                Operatori dei servizi sociali territoriali e consultori familiari 
+                                che seguono famiglie con problematiche di violenza.
+                            </p>
+                        </div>
+                        
+                        <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                            <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-neutral-900 mb-3">Psicologi</h3>
+                            <p class="text-neutral-600 text-sm leading-relaxed">
+                                Professionisti della salute mentale che identificano la necessità 
+                                di trattamenti specializzati per la violenza.
+                            </p>
+                        </div>
+                        
+                        <div class="text-center" data-aos="fade-up" data-aos-delay="400">
+                            <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-neutral-900 mb-3">Enti Pubblici</h3>
+                            <p class="text-neutral-600 text-sm leading-relaxed">
+                                Tribunali, forze dell'ordine, ASL e altri enti pubblici 
+                                che necessitano di servizi specializzati.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Referral Protocol -->
+        <section id="protocollo" class="py-20 bg-neutral-50">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-16" data-aos="fade-up">
+                        <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 mb-6 font-serif">
+                            Protocollo di Referral
+                        </h2>
+                        <p class="text-lg text-neutral-600 leading-relaxed">
+                            Procedura semplificata per indirizzare i clienti verso i nostri servizi 
+                            mantenendo la continuità del supporto professionale.
+                        </p>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-3 gap-8 mb-16">
+                        <!-- Step 1 -->
+                        <div class="bg-white rounded-lg p-8 shadow-md relative" data-aos="fade-up" data-aos-delay="100">
+                            <div class="absolute -top-4 left-8 w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold">
+                                1
+                            </div>
+                            <h3 class="text-xl font-bold text-neutral-900 mb-4 mt-4">Contatto Iniziale</h3>
+                            <div class="space-y-3 text-sm text-neutral-600">
+                                <div class="flex items-start">
+                                    <svg class="w-4 h-4 text-primary mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>Chiamata o email di presentazione del caso</span>
+                                </div>
+                                <div class="flex items-start">
+                                    <svg class="w-4 h-4 text-primary mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>Valutazione preliminare dell'idoneità</span>
+                                </div>
+                                <div class="flex items-start">
+                                    <svg class="w-4 h-4 text-primary mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>Condivisione delle modalità di intervento</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 2 -->
+                        <div class="bg-white rounded-lg p-8 shadow-md relative" data-aos="fade-up" data-aos-delay="200">
+                            <div class="absolute -top-4 left-8 w-8 h-8 bg-secondary rounded-full flex items-center justify-center text-white font-bold">
+                                2
+                            </div>
+                            <h3 class="text-xl font-bold text-neutral-900 mb-4 mt-4">Invio del Cliente</h3>
+                            <div class="space-y-3 text-sm text-neutral-600">
+                                <div class="flex items-start">
+                                    <svg class="w-4 h-4 text-secondary mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>Compilazione scheda di referral</span>
+                                </div>
+                                <div class="flex items-start">
+                                    <svg class="w-4 h-4 text-secondary mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>Primo appuntamento programmato entro 7 giorni</span>
+                                </div>
+                                <div class="flex items-start">
+                                    <svg class="w-4 h-4 text-secondary mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>Consenso informato per il trattamento</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 3 -->
+                        <div class="bg-white rounded-lg p-8 shadow-md relative" data-aos="fade-up" data-aos-delay="300">
+                            <div class="absolute -top-4 left-8 w-8 h-8 bg-accent rounded-full flex items-center justify-center text-white font-bold">
+                                3
+                            </div>
+                            <h3 class="text-xl font-bold text-neutral-900 mb-4 mt-4">Follow-up</h3>
+                            <div class="space-y-3 text-sm text-neutral-600">
+                                <div class="flex items-start">
+                                    <svg class="w-4 h-4 text-accent mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>Report mensili sui progressi</span>
+                                </div>
+                                <div class="flex items-start">
+                                    <svg class="w-4 h-4 text-accent mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>Coordinamento per obiettivi comuni</span>
+                                </div>
+                                <div class="flex items-start">
+                                    <svg class="w-4 h-4 text-accent mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>Relazione finale di completamento</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Referral Form -->
+                    <div class="bg-white rounded-lg p-8 shadow-md" data-aos="fade-up">
+                        <h3 class="text-2xl font-bold text-neutral-900 mb-6 text-center">Modulo di Referral</h3>
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="text-lg font-semibold text-neutral-900 mb-4">Informazioni Professionista</h4>
+                                <div class="space-y-4">
+                                    <div>
+                                        <label class="block text-sm font-semibold text-neutral-900 mb-2">Nome e Cognome *</label>
+                                        <input type="text" class="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary">
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-semibold text-neutral-900 mb-2">Qualifica Professionale *</label>
+                                        <select class="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary">
+                                            <option>Seleziona</option>
+                                            <option>Avvocato</option>
+                                            <option>Assistente Sociale</option>
+                                            <option>Psicologo</option>
+                                            <option>Psichiatra</option>
+                                            <option>Altro</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-semibold text-neutral-900 mb-2">Ente/Studio</label>
+                                        <input type="text" class="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-lg font-semibold text-neutral-900 mb-4">Informazioni Cliente</h4>
+                                <div class="space-y-4">
+                                    <div>
+                                        <label class="block text-sm font-semibold text-neutral-900 mb-2">Iniziali Cliente</label>
+                                        <input type="text" class="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary" placeholder="Es. M.R.">
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-semibold text-neutral-900 mb-2">Età</label>
+                                        <select class="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary">
+                                            <option>Seleziona</option>
+                                            <option>18-25 anni</option>
+                                            <option>26-35 anni</option>
+                                            <option>36-45 anni</option>
+                                            <option>46-55 anni</option>
+                                            <option>56+ anni</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-semibold text-neutral-900 mb-2">Urgenza</label>
+                                        <select class="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary">
+                                            <option>Routine (entro 2 settimane)</option>
+                                            <option>Prioritaria (entro 1 settimana)</option>
+                                            <option>Urgente (entro 3 giorni)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <label class="block text-sm font-semibold text-neutral-900 mb-2">Descrizione del Caso</label>
+                            <textarea rows="4" class="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary" placeholder="Breve descrizione della situazione e delle ragioni del referral..."></textarea>
+                        </div>
+                        
+                        <div class="mt-8 text-center">
+                            <button class="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-colors">
+                                Invia Richiesta di Referral
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services for Professionals -->
+        <section class="py-20">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-16" data-aos="fade-up">
+                        <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 mb-6 font-serif">
+                            Servizi per Professionisti
+                        </h2>
+                        <p class="text-lg text-neutral-600 leading-relaxed">
+                            Supportiamo la vostra attività professionale con servizi specializzati 
+                            e materiali formativi aggiornati.
+                        </p>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <!-- Training & Education -->
+                        <div class="bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg p-8" data-aos="fade-up" data-aos-delay="100">
+                            <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-neutral-900 mb-4">Formazione e Aggiornamento</h3>
+                            <ul class="space-y-3 text-neutral-700">
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-primary mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>Seminari ECM sulla violenza domestica</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-primary mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>Workshop pratici sui protocolli di intervento</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-primary mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>Materiali informativi aggiornati</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-primary mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>Consulenza per casi complessi</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Legal Support -->
+                        <div class="bg-gradient-to-br from-secondary/10 to-secondary/5 rounded-lg p-8" data-aos="fade-up" data-aos-delay="200">
+                            <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-neutral-900 mb-4">Supporto Legale</h3>
+                            <ul class="space-y-3 text-neutral-700">
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-secondary mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>Relazioni tecniche per tribunali</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-secondary mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>Consulenza tecnica di parte</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-secondary mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>Valutazioni psicologiche specialistiche</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-secondary mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>Programmi alternativi alla detenzione</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Network Section -->
+        <section class="py-20 bg-neutral-50">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <div class="text-center mb-16" data-aos="fade-up">
+                        <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 mb-6 font-serif">
+                            Rete di Collaborazioni
+                        </h2>
+                        <p class="text-lg text-neutral-600 leading-relaxed">
+                            Facciamo parte di una rete integrata di servizi per garantire 
+                            un approccio multidisciplinare e coordinato.
+                        </p>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-3 gap-8 text-center">
+                        <div data-aos="fade-up" data-aos-delay="100">
+                            <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-neutral-900 mb-2">Enti Pubblici</h3>
+                            <p class="text-neutral-600 text-sm">Tribunale di Bergamo, ASL, Comuni del territorio</p>
+                        </div>
+                        
+                        <div data-aos="fade-up" data-aos-delay="200">
+                            <div class="w-20 h-20 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-10 h-10 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-neutral-900 mb-2">Centri Antiviolenza</h3>
+                            <p class="text-neutral-600 text-sm">Collaborazione con centri per donne e minori</p>
+                        </div>
+                        
+                        <div data-aos="fade-up" data-aos-delay="300">
+                            <div class="w-20 h-20 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-10 h-10 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-neutral-900 mb-2">Professionisti Privati</h3>
+                            <p class="text-neutral-600 text-sm">Studi legali, psicologi, medici specialisti</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-16 bg-white rounded-lg p-8 shadow-md text-center" data-aos="fade-up">
+                        <h3 class="text-2xl font-bold text-neutral-900 mb-4">Diventa Partner</h3>
+                        <p class="text-neutral-600 mb-6 leading-relaxed">
+                            Sei interessato/a a entrare nella nostra rete di collaborazioni? 
+                            Contattaci per valutare insieme le modalità di partnership più adatte.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                            <a href="contatti.html" class="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-colors">
+                                Richiedi Partnership
+                            </a>
+                            <a href="tel:+393401234567" class="border border-primary text-primary px-8 py-3 rounded-lg font-semibold hover:bg-primary/5 transition-colors">
+                                Chiamaci Direttamente
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 bg-gradient-to-r from-accent to-primary text-white">
+            <div class="container mx-auto px-4 text-center" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 font-serif">
+                    Iniziamo una Collaborazione
+                </h2>
+                <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto leading-relaxed">
+                    La tua professionalità unita alla nostra esperienza specialistica 
+                    può fare la differenza nella vita delle persone.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+                    <a href="contatti.html" class="bg-white text-accent px-8 py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition-colors shadow-lg">
+                        Contatti Professionali
+                    </a>
+                    <a href="mailto:professionisti@lasvolta.org" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-accent transition-colors flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        Email Dedicata
+                    </a>
+                </div>
+                
+                <div class="text-sm opacity-80 space-y-2">
+                    <p>📋 Protocolli standardizzati e condivisi</p>
+                    <p>🤝 Supporto continuativo nella gestione dei casi</p>
+                    <p>📊 Report dettagliati sui progressi</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-neutral-900 text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">LS</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">La Svolta</h3>
+                            <p class="text-sm text-gray-400">Centro di Supporto per il Cambiamento</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Da oltre 15 anni aiutiamo uomini a riconoscere e cambiare comportamenti violenti, 
+                        supportando al contempo le famiglie nel loro percorso di guarigione.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Link Utili</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="per-uomini.html" class="text-gray-300 hover:text-primary transition-colors">Per Gli Uomini</a></li>
+                        <li><a href="per-familiari.html" class="text-gray-300 hover:text-primary transition-colors">Per Familiari</a></li>
+                        <li><a href="per-professionisti.html" class="text-accent font-semibold">Per Professionisti</a></li>
+                        <li><a href="risorse.html" class="text-gray-300 hover:text-primary transition-colors">Risorse</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contatti Professionali</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                            <span class="text-gray-300">+39 340 123 4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            <span class="text-gray-300">professionisti@lasvolta.org</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-sm text-gray-400">
+                    © 2024 La Svolta. Tutti i diritti riservati.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ElevenLabs Voice Widget -->
+    <div id="voice-widget-container" class="fixed bottom-6 right-6 z-50">
+        <elevenlabs-convai agent-id="agent_5101k1fzj4w2fbqtqdfja05b4jx9"></elevenlabs-convai>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

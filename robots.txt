@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+
+# Allow all pages for search engines
+Allow: /index.html
+Allow: /pages/per-uomini.html
+Allow: /pages/per-familiari.html
+Allow: /pages/per-professionisti.html
+Allow: /pages/contatti.html
+Allow: /pages/risorse.html
+Allow: /pages/chi-siamo.html
+Allow: /pages/privacy.html
+
+# Allow assets
+Allow: /assets/
+
+# Block sensitive or unnecessary paths
+Disallow: /assets/js/
+Disallow: /.netlify/
+Disallow: /node_modules/
+Disallow: /*.log
+Disallow: /*.tmp
+
+# Sitemap location
+Sitemap: https://lasvolta.netlify.app/sitemap.xml

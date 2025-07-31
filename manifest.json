@@ -1,0 +1,88 @@
+{
+  "name": "La Svolta - Centro di Supporto per il Cambiamento",
+  "short_name": "La Svolta",
+  "description": "Centro specializzato nell'aiutare uomini a riconoscere e cambiare comportamenti violenti. Supporto professionale e risorse educative.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F8F9FA",
+  "theme_color": "#4A90A4",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "it",
+  "categories": ["health", "medical", "lifestyle"],
+  "icons": [
+    {
+      "src": "assets/images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "assets/images/screenshot-mobile.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "assets/images/screenshot-desktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Contatti",
+      "short_name": "Contatti",
+      "description": "Contatta La Svolta per supporto immediato",
+      "url": "/pages/contatti.html",
+      "icons": [
+        {
+          "src": "assets/images/favicon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "Risorse",
+      "short_name": "Risorse",
+      "description": "Accedi a guide e materiali educativi",
+      "url": "/pages/risorse.html",
+      "icons": [
+        {
+          "src": "assets/images/favicon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "Per gli Uomini",
+      "short_name": "Supporto",
+      "description": "Area dedicata agli uomini che vogliono cambiare",
+      "url": "/pages/per-uomini.html",
+      "icons": [
+        {
+          "src": "assets/images/favicon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    }
+  ]
+}
